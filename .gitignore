@@ -1,2 +1,4 @@
+.gunicorn.pid
+.nginx.log
 fabfile.py
 local_settings.py
