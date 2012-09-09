@@ -1,0 +1,7 @@
+django-annoying
+django-bcrypt
+Django
+gunicorn
+psycopg2
+South
+werkzeug

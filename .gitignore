@@ -1,4 +1,2 @@
-*.log
-*.pot
-*.pyc
+fabfile.py
 local_settings.py
