@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{% block page-title %}Craft of Man{% endblock %}</title>
+
+    <meta charset="utf-8" />
+    {% block page-description %}<meta name="description" content="Celebrating the Craft of Man." />{% endblock %}
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/craftofman.css?1" />
+
+    <!--[if IE]>
+        <style type="text/css">
+            .group {
+                display: block;
+                zoom: 1;
+            }
+        </style>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="{% block body-class %}{% endblock %}">
+    <header class="main">
+        <h1>Craft of Man</h1>
+        <h2>Coming Soon.</h2>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>
