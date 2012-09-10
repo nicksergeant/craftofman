@@ -1,3 +1,4 @@
+*.un~
 .gunicorn.pid
 .nginx.log
 fabfile.py
