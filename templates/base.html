@@ -8,6 +8,7 @@
     {% block page-description %}<meta name="description" content="Celebrating the Craft of Man." />{% endblock %}
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}/js/craftofman.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/craftofman.css?1" />
 
@@ -26,9 +27,14 @@
 
 </head>
 <body class="{% block body-class %}{% endblock %}">
-    <header class="main">
-        <h1>Craft of Man</h1>
-        <h2>Coming Soon.</h2>
+    <header>
+        <h1 class="slabtextdone">
+            <span class="slabtext top" style="word-spacing: -0.5px; letter-spacing: 0px; font-size: 127.793px; ">Craft of Man</span>
+            <span class="slabtext" style="word-spacing: 0px; letter-spacing: 0px; font-size: 95.455px; ">is an exploration</span>
+            <span class="slabtext" style="word-spacing: 2px; letter-spacing: 0px; font-size: 86.122px; ">into the true value</span>
+            <span class="slabtext" style="word-spacing: 1px; letter-spacing: 0px; font-size: 89.209px; ">of creating things</span>
+            <span class="slabtext bottom" style="word-spacing: -2px; letter-spacing: 0px; font-size: 130.727px; ">for yourself</span>
+        </h1>
     </header>
     {% block content %}{% endblock %}
 </body>

@@ -11,7 +11,10 @@ $League: 'LeagueGothicRegular', Impact, Charcoal, 'Arial Black', Gadget, sans-se
          url('/static/fonts/league-gothic.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}.slabtextdone .slabtext{display:block;line-height:0.9;}
+.slabtext {
+    white-space: nowrap;
 }
 
 // Mixins
@@ -93,19 +96,26 @@ body {
 }
 
 // Global
-header.main {
-    padding: 50px 0;
-    text-align: center;
+header {
+    margin: 0 auto;
+    width: 500px;
 
     h1 {
-        font: normal 150px $League;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    h2 {
         color: #CCC;
-        font: normal 50px $League;
+        font-family: $League;
+        font-size: 300%;
+        font-weight: normal;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 50px 0;
+        text-align: center;
         text-transform: uppercase;
-        margin: 0;
+
+        span.top {
+            color: #222;
+        }
+        span.bottom {
+            color: rgba(34, 34, 34, .5);
+        }
     }
 }
