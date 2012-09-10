@@ -4,3 +4,4 @@
 .nginx.log
 fabfile.py
 local_settings.py
+static
