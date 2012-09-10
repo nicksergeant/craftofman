@@ -11,7 +11,10 @@ $League: 'LeagueGothicRegular', Impact, Charcoal, 'Arial Black', Gadget, sans-se
          url('/static/fonts/league-gothic.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}.slabtextdone .slabtext{display:block;line-height:0.9;}
+.slabtext {
+    white-space: nowrap;
 }
 
 // Mixins
@@ -71,10 +74,11 @@ $League: 'LeagueGothicRegular', Impact, Charcoal, 'Arial Black', Gadget, sans-se
 }
 
 // Page
-html, body {
-    background: #FCFCFC;
+html {
+    background: #0F0F10 url('/static/images/bg.png') top left repeat;
 }
 body {
+    background: transparent;
     color: #222222;
     font: normal 14px/16px $Helvetica;
     text-rendering: optimizeLegibility;
@@ -93,19 +97,25 @@ body {
 }
 
 // Global
-header.main {
-    padding: 50px 0;
-    text-align: center;
+header {
+    margin: 0 auto;
+    width: 500px;
 
     h1 {
-        font: normal 150px $League;
+        color: rgba(255, 255, 255, .3);
+        font-family: $League;
+        font-size: 300%;
+        font-weight: normal;
+        line-height: 1;
+        margin: 150px auto 0 auto;
+        text-align: center;
         text-transform: uppercase;
-        margin: 0;
-    }
-    h2 {
-        color: #CCC;
-        font: normal 50px $League;
-        text-transform: uppercase;
-        margin: 0;
+
+        span.top {
+            color: rgba(255, 255, 255, .9);
+        }
+        span.bottom {
+            color: rgba(255, 255, 255, .6);
+        }
     }
 }
