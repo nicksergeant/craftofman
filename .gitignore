@@ -1,3 +1,4 @@
+*.pyc
 *.un~
 .gunicorn.pid
 .nginx.log
